@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dailyhoopstats uploader</title>
+<style>
+  :root { --ink:#111827; --sub:#4b5563; --line:#e5e7eb; --accent:#cc0000; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+         color:var(--ink); background:#fff; line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px 80px; }
+  header { border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px; }
+  h1 { font-size:2rem; letter-spacing:-0.02em; }
+  .yt { color:var(--accent); font-weight:700; }
+  .tag { color:var(--sub); margin-top:6px; }
+  h2 { font-size:1.15rem; margin:32px 0 10px; }
+  p { margin:10px 0; color:var(--ink); }
+  ul { margin:10px 0 10px 22px; }
+  li { margin:6px 0; }
+  a { color:#1d4ed8; }
+  footer { margin-top:56px; border-top:1px solid var(--line); padding-top:20px;
+           color:var(--sub); font-size:0.95rem; }
+  footer a { font-weight:600; }
+  .notice { background:#f9fafb; border:1px solid var(--line); border-radius:8px;
+            padding:14px 18px; margin-top:24px; font-size:0.95rem; color:var(--sub); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>dailyhoopstats uploader</h1>
+    <p class="tag">A private desktop tool that publishes original NBA analysis Shorts to
+    the <a href="https://www.youtube.com/@dailyhoopstats">Daily Hoop Stats</a> channel on
+    <span class="yt">YouTube</span>.</p>
+  </header>
+
+  <h2>What it is</h2>
+  <p>dailyhoopstats uploader is a command-line script used exclusively by the developer
+  (who is also the channel owner) to upload finished, original short-form NBA analysis
+  videos to their own YouTube channel and set each video's title, description and
+  scheduled publish time.</p>
+
+  <h2>What it is not</h2>
+  <ul>
+    <li>It is not distributed, sold or offered to anyone else — there are no end users.</li>
+    <li>It does not read, collect, store or share data about any YouTube user.</li>
+    <li>It does not comment, like, subscribe, message or interact with any other channel.</li>
+  </ul>
+
+  <div class="notice">This application uses <strong>YouTube API Services</strong>
+  (YouTube Data API v3, <code>videos.insert</code>) to upload videos. By using it, the
+  user agrees to the <a href="https://www.youtube.com/t/terms">YouTube Terms of
+  Service</a> and the <a href="http://www.google.com/policies/privacy">Google Privacy
+  Policy</a>.</div>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    Contact: <a href="mailto:juacuec2@gmail.com">juacuec2@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
