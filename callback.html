@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authorization received — dailyhoopstats uploader</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+         color:#111827; background:#fff; line-height:1.65;
+         display:grid; place-items:center; min-height:100vh; }
+  .card { max-width:560px; padding:40px; border:1px solid #e5e7eb;
+          border-radius:12px; text-align:center; }
+  h1 { font-size:1.4rem; margin-bottom:12px; }
+  p { color:#4b5563; margin:8px 0; }
+  code { background:#f3f4f6; padding:2px 8px; border-radius:6px;
+         font-size:0.95rem; word-break:break-all; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>✅ Authorization received</h1>
+  <p>dailyhoopstats uploader got the TikTok authorization response.</p>
+  <p id="status">You can close this tab and return to the terminal.</p>
+  <p><code id="code"></code></p>
+</div>
+<script>
+  const params = new URLSearchParams(location.search);
+  const code = params.get('code');
+  if (code) {
+    document.getElementById('code').textContent =
+      'authorization code: ' + code.slice(0, 12) + '…';
+  } else if (params.get('error')) {
+    document.getElementById('status').textContent =
+      'Authorization was denied or failed: ' + params.get('error');
+  }
+</script>
+</body>
+</html>
